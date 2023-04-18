@@ -1,0 +1,45 @@
+/* common */
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(17, 0, 173);
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;    
+}
+/* ====================================================================== */
+
+/* Header */
+/* ====================================================================== */
+
+/* Main */
+.main-content {
+    padding: 50px 0;
+    min-height: 500px;
+}
+/* ====================================================================== */
+
+/* 404 */
+.error-content {
+    text-align: center;
+    padding: 100px 0;
+    min-height: 500px;
+}
+/* ====================================================================== */
+
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #000;
+}
+footer img {
+    max-width: 100px;
+    width: 100%;
+}
+/* ====================================================================== */
