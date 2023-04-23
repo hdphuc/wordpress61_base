@@ -3,18 +3,38 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 a:hover {
     color: rgb(17, 0, 173);
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
-    display: block;    
+    display: block;
 }
+
 /* ====================================================================== */
 
 /* Header */
+header {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Nav menu */
+#main-menu>li>a {
+    color: #000;
+    transition: 0.1s all linear;
+}
+
+#main-menu>li>a:hover {
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+}
+
 /* ====================================================================== */
 
 /* Main */
@@ -22,6 +42,81 @@ img {
     padding: 50px 0;
     min-height: 500px;
 }
+
+/* ====================================================================== */
+
+
+/* Products */
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.woocommerce ul.products li.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: none;
+}
+.woocommerce ul.products::before,
+.woocommerce ul.products::after {
+    display: none !important;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.woocommerce ul.products li.product .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.woocommerce .product .price del {
+    margin-right: 10px;
+    color: #000;
+}
+.woocommerce .product .price ins {
+    text-decoration: none;
+    color: #f00;
+}
+
+.woocommerce div.product form.cart .button,
+.woocommerce ul.products li.product .button {
+    display: inline-block;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.1s all linear;
+    border: 1px solid #000;
+}
+.woocommerce ul.products li.product .button:nth-child(2) {
+    margin-right: 10px;
+}
+.woocommerce div.product form.cart .button:hover,
+.woocommerce ul.products li.product .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* quick view */
+#yith-quick-view-modal #yith-quick-view-content {
+    height: 100%;
+    padding: 12px;
+    border-radius: 10px;
+}
+
 /* ====================================================================== */
 
 /* 404 */
@@ -30,6 +125,7 @@ img {
     padding: 100px 0;
     min-height: 500px;
 }
+
 /* ====================================================================== */
 
 
@@ -38,8 +134,10 @@ footer {
     background-color: #fff;
     color: #000;
 }
+
 footer img {
     max-width: 100px;
     width: 100%;
 }
+
 /* ====================================================================== */

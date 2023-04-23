@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.4.min.js"></script>
     <?php wp_head(); ?>
 </head>
@@ -24,9 +23,9 @@
     <!-- Nav bar -->
     <header class="main-header navbar-expand-lg sticky-top bg-light" id="main-header">
         <div class="container">
-            <nav class="navbar navbar-light ">
+            <nav class="navbar navbar-light navbar-expand-lg">
                 <div class="container-fluid w-100">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="<?php echo home_url('/') ?>">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png " alt="" width="30" height="24" class="d-inline-block align-text-top">
                         <?php bloginfo('name'); ?>
                     </a>
@@ -43,6 +42,7 @@
                                     'menu_class'     => 'navbar-nav',
                                     'menu_id' => 'main-menu',
                                     'container'      => false,
+                                    'walker'         => new Restaurant_Walker_Nav_Menu(),
                                 )
                             );
                         }
