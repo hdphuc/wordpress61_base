@@ -26,7 +26,7 @@
             <nav class="navbar navbar-light navbar-expand-lg">
                 <div class="container-fluid w-100">
                     <a class="navbar-brand" href="<?php echo home_url('/') ?>">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png " alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="<?php echo get_theme_mod('logo_header') ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
                         <?php bloginfo('name'); ?>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

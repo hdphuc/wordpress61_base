@@ -1,38 +1,43 @@
 <?php
 $options = array(
-    array("namePanel" => "フッター情報の設定"),
+    array("namePanel" => "Setting footer"),
 
-    array("nameSection" => "フッタのロゴ設定", "link" => "/"),
+    array("nameSection" => "Logo", "link" => "/"),
     array(
         "name" => "logo_footer",
-        "label" => "ロゴ設定",
-        "description" => "サイズが238 x 40ピクセルの画像選択",
+        "label" => "logo",
+        "description" => "select logo footer size 100px x 100px",
         "default" => '',
         "type" => "image"
     ),
-    array("nameSection" => "2フッターのロゴを設定する", "link" => "/"),
+    array("nameSection" => "Setting socical", "link" => "/"),
     array(
-        "name" => "logo_footer_2",
-        "label" => "2ロゴの設定",
-        "description" => "サイズが159 x 60ピクセルの画像選択",
-        "default" => '',
-        "type" => "image"
-    ),
-    array(
-        "name" => "logo_footer_2_link",
-        "label" => "ロゴ2の画像URL",
-        "description" => "URLを入力",
-        "default" => '',
+        "name" => "facebook_link",
+        "label" => "facebook link",
+        "description" => "Insert Facebook link",
+        "default" => '#',
         "type" => "text"
     ),
-    array("nameSection" => "フッタ紹介内容の設定", "link" => "/"),
     array(
-        "name" => "about_footer",
-        "label" => "紹介の設定",
-        "description" => "内容を入力",
-        "default" => '',
-        "type" => "editor"
+        "name" => "twitter_link",
+        "label" => "twitter link",
+        "description" => "Insert twitter link",
+        "default" => '#',
+        "type" => "text"
     ),
-
+    array(
+        "name" => "instagram_link",
+        "label" => "instagram link",
+        "description" => "Insert instagram link",
+        "default" => '#',
+        "type" => "text"
+    ),
+    array(
+        "name" => "youtube_link",
+        "label" => "youtube link",
+        "description" => "Insert youtube link",
+        "default" => '#',
+        "type" => "text"
+    ),
 );
 $arrOpt = array_merge($arrOpt, $options);

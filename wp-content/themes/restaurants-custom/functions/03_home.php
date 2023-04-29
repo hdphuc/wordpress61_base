@@ -1,44 +1,44 @@
 <?php
 $options = array(
-    array("namePanel" => "トップページ情報の設定"),
+    array("namePanel" => "Setting home page"),
 
-    array("nameSection" => "スライドの設定", "link" => "/"),
+    // array("nameSection" => "Home slider", "link" => "/"),
+    // array(
+    //     "name" => "number_slider",
+    //     "label" => "スライド数の設定",
+    //     "description" => "数を入力",
+    //     "default" => 0,
+    //     "type" => "number"
+    // ),
+    // array(
+    //     "name" => "image_slider",
+    //     "label" => "スライド%iの画像",
+    //     "description" => "サイズを選択(980 x 460 px)",
+    //     "default" => '',
+    //     "repeat" => 'number_slider',
+    //     "type" => "image"
+    // ),
+    // array(
+    //     "name" => "link_slider",
+    //     "label" => "スライド%iの画像URL",
+    //     "description" => "URLを入力",
+    //     "default" => '',
+    //     "repeat" => 'number_slider',
+    //     "type" => "text"
+    // ),
+    array("nameSection" => "Home block banner 1", "link" => "/"),
     array(
-        "name" => "number_slider",
-        "label" => "スライド数の設定",
-        "description" => "数を入力",
-        "default" => 0,
-        "type" => "number"
-    ),
-    array(
-        "name" => "image_slider",
-        "label" => "スライド%iの画像",
-        "description" => "サイズを選択(980 x 460 px)",
+        "name" => "home_banner_img_1",
+        "label" => "home banner image",
+        "description" => "select home banner image size 1280px x 300px",
         "default" => '',
-        "repeat" => 'number_slider',
-        "type" => "image"
-    ),
-    array(
-        "name" => "link_slider",
-        "label" => "スライド%iの画像URL",
-        "description" => "URLを入力",
-        "default" => '',
-        "repeat" => 'number_slider',
         "type" => "text"
     ),
-    array("nameSection" => "メインタイトルを設定", "link" => "/"),
     array(
-        "name" => "title_h1",
-        "label" => "大きなh1を設定します。タイトル",
-        "description" => "内容を入力",
-        "default" => '',
-        "type" => "text"
-    ),
-    array(
-        "name" => "title_h2",
-        "label" => "サブターゲットh2を設定します",
-        "description" => "内容を入力",
-        "default" => '',
+        "name" => "home_banner_link_1",
+        "label" => "Link for image 1",
+        "description" => "insert link redirect",
+        "default" => '#',
         "type" => "text"
     ),
     array("nameSection" => "ロゴアプリケーションリストの設定", "link" => "/"),

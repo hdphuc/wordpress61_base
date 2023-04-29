@@ -12,8 +12,8 @@ get_header();
         </section> 
         <section class="home-banner home-full-banner">
             <div class="home-banner-wrap">
-                <a href="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_19_19_826Z.png">
-                    <img src="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_19_19_826Z.png" alt="banner">
+                <a href="<?php echo get_theme_mod('home_banner_link_1') ?>">
+                    <img src="<?php echo get_theme_mod('home_banner_img_1') ?>" alt="banner 1">
                 </a>
             </div>
         </section>

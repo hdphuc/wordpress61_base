@@ -12,7 +12,7 @@
                 <div class="footer-content">
                     <div class="footer-logo">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
-                            <img class="d-lock" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo">
+                            <img class="d-lock" src="<?php echo get_theme_mod('logo_footer'); ?>" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -37,22 +37,22 @@
                 <div class="footer-social">
                     <ul class="row list-inline">
                         <li class="col">
-                            <a href="#" class="rounded border p-3">
+                            <a href="<?php echo get_theme_mod('facebook_link'); ?>" class="rounded border p-3">
                                 <i class="fa fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="col">
-                            <a href="#" class="rounded border p-3">
+                            <a href="<?php echo get_theme_mod('twitter_link'); ?>" class="rounded border p-3">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li class="col">
-                            <a href="#" class="rounded border p-3">
+                            <a href="<?php echo get_theme_mod('instagram_link'); ?>" class="rounded border p-3">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                         <li class="col">
-                            <a href="#" class="rounded border p-3">
+                            <a href="<?php echo get_theme_mod('youtube_link'); ?>" class="rounded border p-3">
                                 <i class="fa fa-youtube"></i>
                             </a>
                         </li>

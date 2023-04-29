@@ -1,19 +1,12 @@
 <?php
 $options = array(
-	array("namePanel" => "ヘッダー情報の設定"),
+	array("namePanel" => "Setting Header"),
 
-	array("nameSection" => "ロゴ設定", "link" => "/"),
+	array("nameSection" => "Header", "link" => "/"),
 	array(
 		"name" => "logo_header",
-		"label" => "ロゴ設定",
-		"description" => "サイズが250x36ピクセルの画像選択",
-		"default" => '',
-		"type" => "image"
-	),
-	array(
-		"name" => "logo_menu_mobile",
-		"label" => "ロゴメニューモバイル",
-		"description" => "サイズが235x30ピクセルの画像選択",
+		"label" => "logo header",
+		"description" => "select logo header size 100px x 100px",
 		"default" => '',
 		"type" => "image"
 	),
