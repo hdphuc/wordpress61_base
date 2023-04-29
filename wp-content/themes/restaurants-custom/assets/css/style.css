@@ -43,6 +43,20 @@ header {
     min-height: 500px;
 }
 
+.section-block-header {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.section-block-header .h2{
+    font-size: 5.1rem;
+}
+
+.home-banner-wrap img {
+    width: 100%;
+    display: block;
+}
+
 /* ====================================================================== */
 
 
@@ -96,7 +110,7 @@ header {
     text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 18px;
     border-radius: 5px;
     transition: 0.1s all linear;
     border: 1px solid #000;
@@ -110,6 +124,13 @@ header {
     color: #000;
 }
 
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+    margin: 30px 0;
+}
+.woocommerce a.added_to_cart {
+    display: none;
+}
 /* quick view */
 #yith-quick-view-modal #yith-quick-view-content {
     height: 100%;
@@ -136,8 +157,21 @@ footer {
 }
 
 footer img {
-    max-width: 100px;
+    max-width: 100px !important;
     width: 100%;
 }
 
+ul#footer-menu{
+}
+
+.footer-menu li a {
+    padding: 10px;
+    display: block;
+    color: #000;
+    transition: 0.1s all;
+}
+.footer-menu li a:hover {
+    background-color: #000;
+    color: #fff;
+}
 /* ====================================================================== */

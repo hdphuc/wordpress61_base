@@ -19,7 +19,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.4.min.js"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class() ?>>
     <!-- Nav bar -->
     <header class="main-header navbar-expand-lg sticky-top bg-light" id="main-header">
         <div class="container">

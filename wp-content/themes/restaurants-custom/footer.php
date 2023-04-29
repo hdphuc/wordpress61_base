@@ -25,7 +25,7 @@
                             array(
                                 'theme_location' => 'footer-menu',
                                 'menu_id'        => 'footer-menu',
-                                'menu_class'     => 'footer-menu',
+                                'menu_class'     => 'list-inline footer-menu',
                                 'container'      => false,
                             )
                         );

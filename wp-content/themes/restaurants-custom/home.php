@@ -12,15 +12,8 @@ get_header();
         </section> 
         <section class="home-banner home-full-banner">
             <div class="home-banner-wrap">
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner.jpg" alt="banner">
-                </a>
-            </div>
-        </section>
-        <section class="home-banner home-full-banner">
-            <div class="home-banner-wrap">
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner.jpg" alt="banner">
+                <a href="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_19_19_826Z.png">
+                    <img src="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_19_19_826Z.png" alt="banner">
                 </a>
             </div>
         </section>
@@ -43,7 +36,7 @@ get_header();
 
                 <div class="section-products-list woocommerce">
                     <?php if ( $loop->have_posts() ) : ?>
-                        <ul class="products columns-3">
+                        <ul class="products columns-4">
                             <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;
                             ?>
                             <li <?php wc_product_class( '', $product ); ?>>
@@ -97,7 +90,7 @@ get_header();
                 </div>
             </div>
         </section>    
-        <section class="home-about home-block">
+        <!-- <section class="home-about home-block">
             <div class="container">
                 <div class="section-block-header">
                     <h2 class="h2">About</h2>
@@ -105,6 +98,13 @@ get_header();
                         This my websiete about food
                     </p>
                 </div>
+            </div>
+        </section> -->
+        <section class="home-banner home-full-banner">
+            <div class="home-banner-wrap">
+                <a href="#">
+                    <img src="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_28_16_448Z.png" alt="banner">
+                </a>
             </div>
         </section>
         <section class="home-products home-block">

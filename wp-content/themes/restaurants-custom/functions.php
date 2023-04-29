@@ -1,6 +1,16 @@
 <?php
 // add function setup theme restaurant
 
+/**
+ * Theme customizer 
+ */
+require_once('inc/theme-customizer-option.php');
+
+/**
+ * Theme customizer 
+ */
+require_once('inc/theme-restapi-route.php');
+
 function restaurant_setup() {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 1568, 9999 );
@@ -18,6 +28,9 @@ function restaurant_setup() {
 
     // add scripts theme in folder assets
     add_action( 'wp_enqueue_scripts', 'restaurant_scripts' );
+
+    // remove sidebar in woocommerce singer product
+    remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 }
 add_action( 'after_setup_theme', 'restaurant_setup' );
 
