@@ -20,15 +20,15 @@ get_header();
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2">Products best saler</h2>
+                    <h2 class="h2"><?php echo get_theme_mod('title_block_product_best_sale') ?></h2>
                     <p class="desc">
-                        This my websiete about food
+                        <?php echo get_theme_mod('description_block_product_best_sale') ?>
                     </p>
                 </div>
                 <?php 
                     $args = array(
                         'post_type' => 'product',
-                        'posts_per_page' => 3,
+                        'posts_per_page' => get_theme_mod('number_product_best_sale') ?? 0,
                         'orderby' => 'date',
                         'order' => 'DESC'
                     );
@@ -102,26 +102,38 @@ get_header();
         </section> -->
         <section class="home-banner home-full-banner">
             <div class="home-banner-wrap">
-                <a href="#">
-                    <img src="http://wordpressbase.com.vn/wp-content/uploads/2023/04/image_2023_04_24T15_28_16_448Z.png" alt="banner">
+                <a href="<?php echo get_theme_mod('home_banner_link_2') ?>">
+                    <img src="<?php echo get_theme_mod('home_banner_img_2') ?>" alt="banner">
                 </a>
             </div>
         </section>
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2">Products</h2>
+                    <h2 class="h2"><?php echo get_theme_mod('title_block_product_list') ?></h2>
                     <p class="desc">
-                        This my websiete about food
+                        <?php echo get_theme_mod('description_block_product_list') ?>
                     </p>
                 </div>
                 <?php 
                     $args = array(
                         'post_type' => 'product',
-                        'posts_per_page' => 20,
+                        'posts_per_page' => get_theme_mod('number_product_list') ?? 0,
                         'orderby' => 'date',
                         'order' => 'DESC'
                     );
+                    if (get_theme_mod('product_list_ids')) {
+                        $args['post_in'] = get_theme_mod('product_list_ids');
+                    }
+                    if (get_theme_mod('catgory_product_list')) {
+                        $args['tax_query'] = array(
+                            array(
+                                'taxonomy' => 'product_cat',
+                                'field' => 'term_id',
+                                'terms' => get_theme_mod('catgory_product_list')
+                            )
+                        );
+                    }
                     $products2 = new WP_Query( $args ); ?>
 
                 <div class="section-products-list woocommerce">

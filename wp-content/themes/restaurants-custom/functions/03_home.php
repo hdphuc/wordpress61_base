@@ -41,50 +41,77 @@ $options = array(
         "default" => '#',
         "type" => "text"
     ),
-    array("nameSection" => "ロゴアプリケーションリストの設定", "link" => "/"),
+    array("nameSection" => "Home block product best saler", "link" => "/"),
     array(
-        "name" => "number_logo_app",
-        "label" => "スライド数の設定",
-        "description" => "数を入力",
-        "default" => 0,
-        "type" => "number"
-    ),
-    array(
-        "name" => "logo_app",
-        "label" => "スライドの画像％i",
-        "description" => "サイズを選択(127 x 32 px)",
-        "default" => '',
-        "repeat" => 'number_logo_app',
-        "type" => "image"
-    ),
-    array("nameSection" => "新しいタイトルを設定する", "link" => "/"),
-    array(
-        "name" => "title_new",
-        "label" => "メインタイトルの設定",
-        "description" => "内容を入力",
+        "name" => "title_block_product_best_sale",
+        "label" => "Title block product best saler",
+        "description" => "title block product best",
         "default" => '',
         "type" => "text"
     ),
     array(
-        "name" => "sub_title_new",
-        "label" => "字幕を設定する",
-        "description" => "内容を入力",
+        "name" => "description_block_product_best_sale",
+        "label" => "Description block product best saler",
+        "description" => "",
+        "default" => '',
+        "type" => "textarea"
+    ),
+    array(
+        "name" => "number_product_best_sale",
+        "label" => "Number product best saler",
+        "description" => "insert number product best example: 4",
+        "default" => '4',
+        "type" => "number"
+    ),
+    array("nameSection" => "Home block banner 2", "link" => "/"),
+    array(
+        "name" => "home_banner_img_2",
+        "label" => "home banner image",
+        "description" => "select home banner image size 1280px x 300px",
         "default" => '',
         "type" => "text"
     ),
     array(
-        "name" => "number_title",
-        "label" => "タイトル数を設定",
-        "description" => "内容を入力",
+        "name" => "home_banner_link_2",
+        "label" => "Link for image 2",
+        "description" => "insert link redirect",
+        "default" => '#',
+        "type" => "text"
+    ),
+    array("nameSection" => "Home block products list", "link" => "/"),
+    array(
+        "name" => "title_block_product_list",
+        "label" => "Title block product list",
+        "description" => "insert Content",
+        "default" => '',
+        "type" => "text"
+    ),
+    array(
+        "name" => "description_block_product_list",
+        "label" => "Description block product list",
+        "description" => "insert Content",
+        "default" => '',
+        "type" => "textarea"
+    ),
+    array(
+        "name" => "number_product_list",
+        "label" => "Number product list",
+        "description" => "insert number product list example: 4",
         "default" => '',
         "type" => "number"
     ),
     array(
-        "name" => "item_title",
-        "label" => "タイトルを選択",
-        "description" => "それぞれのIDタイトルを入力してください",
+        "name" => "product_list_ids",
+        "label" => "Product list ids",
+        "description" => "insert product list ids example: 1,2,3,4",
         "default" => '',
-        "repeat" => 'number_title',
+        "type" => "text"
+    ),
+    array(
+        "name" => "catgory_product_list",
+        "label" => "Catgory product list",
+        "description" => "insert catgory product list example: 1,2,3,4",
+        "default" => '',
         "type" => "text"
     ),
     array("nameSection" => "スケジュールタイトルの設定", "link" => "/"),
