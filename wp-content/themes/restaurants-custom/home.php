@@ -1,8 +1,8 @@
-<?
+<?php
 /**
  * Home page template
  */
-get_header();
+ get_header();
 ?>
 
 <div class="home-container">
