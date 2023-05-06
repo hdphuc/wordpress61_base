@@ -4,7 +4,7 @@
  * Footer for the theme
  */
 ?>
-<footer class="p-5">
+<footer class="p-lg-5 p-sm-3">
     <hr class="footer-hr bg-primary mb-5">
     <div class="container">
         <div class="row">

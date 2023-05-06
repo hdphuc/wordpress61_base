@@ -32,7 +32,7 @@ $options = array(
         "label" => "home banner image",
         "description" => "select home banner image size 1280px x 300px",
         "default" => '',
-        "type" => "text"
+        "type" => "image"
     ),
     array(
         "name" => "home_banner_link_1",
@@ -69,7 +69,7 @@ $options = array(
         "label" => "home banner image",
         "description" => "select home banner image size 1280px x 300px",
         "default" => '',
-        "type" => "text"
+        "type" => "image"
     ),
     array(
         "name" => "home_banner_link_2",

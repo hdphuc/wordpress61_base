@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 global $product;
 
 ?>
-<div class="container mt-5 mb-5">
+
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product.
@@ -74,7 +74,6 @@ global $product;
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
 		?>
-	</div>
 
 	<?php do_action( 'woocommerce_after_single_product' ); ?>
 </div>

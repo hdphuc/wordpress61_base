@@ -15,6 +15,12 @@ img {
     display: block;
 }
 
+input, textarea, select {
+	border: 1px solid #ccc;
+	border-radius: 5p;
+	padding: 5px 10px;
+}
+
 /* ====================================================================== */
 
 /* Header */
@@ -34,7 +40,9 @@ header {
     background-color: #000;
     border-radius: 5px;
 }
-
+ul#main-menu {
+    align-items: center;
+}
 /* ====================================================================== */
 
 /* Main */
@@ -57,6 +65,34 @@ header {
     display: block;
 }
 
+section.home-banner.home-full-banner {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 800px) {
+	
+section.home-banner.home-full-banner {
+    margin: 15px 0;
+}
+	
+	.section-block-header .h2 {
+		font-size: 3.1rem;
+	}
+	
+	.section-block-header {
+    text-align: center;
+    margin: 30px 0;
+}
+}
+
+
+@media only screen and (max-width: 400px) {	
+	.section-block-header .h2 {
+		font-size: 2.1rem;
+	}
+}
 /* ====================================================================== */
 
 
@@ -131,6 +167,28 @@ header {
 .woocommerce a.added_to_cart {
     display: none;
 }
+.woocommerce ul.products li.product .star-rating {
+	display: none;
+}
+.woocommerce div.product form.cart div.quantity {
+    float: left;
+    margin: 0 4px 0 0;
+    margin-right: 15px;
+}
+.woocommerce .quantity .qty {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.woocommerce span.onsale {
+    background: #f00;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* quick view */
 #yith-quick-view-modal #yith-quick-view-content {
     height: 100%;
@@ -138,6 +196,11 @@ header {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 800px){
+	.woocommerce ul.products {
+    justify-content: space-between;
+}
+}
 /* ====================================================================== */
 
 /* 404 */
@@ -149,7 +212,92 @@ header {
 
 /* ====================================================================== */
 
+/* MY ACCOUNT */
+.woocommerce-account .woocommerce-MyAccount-navigation ul {list-style: none; padding: 0;}
 
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    background: #ddd9d9;
+    color: #505050;
+    border-radius: 3px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li {margin-bottom: 5px;}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.woocommerce-account .addresses .title .edit {
+    background: #878585;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.woocommerce-account .addresses .title .edit:hover {
+    background: #000;
+}
+
+header.woocommerce-Address-title.title {
+}
+.wps_wpr_common_table td {
+	padding: 0 24px;
+}
+/*=======================================================================*/
+/* CONTACT */
+.wpcf7-form-control {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+form.wpcf7-form.init {
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+form.wpcf7-form.init > * {
+    /* display: flex; */
+    /* width: 100%; */
+}
+
+span.wpcf7-form-control-wrap {
+    display: block;
+    width: 100%;
+    font-weight: initial;
+}
+
+form.wpcf7-form.init label {
+    width: 100%;
+    display: block;
+    font-weight: 600;
+}
+
+.wpcf7-form-control:focus, .wpcf7-form-control:focus-visible {
+    border: 1px solid #ccc !important;
+}
+/*===========================================*/
 /* Footer */
 footer {
     background-color: #fff;
@@ -173,5 +321,11 @@ ul#footer-menu{
 .footer-menu li a:hover {
     background-color: #000;
     color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+	footer {
+		padding: 20px 0;
+	}
 }
 /* ====================================================================== */

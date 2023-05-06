@@ -1,5 +1,5 @@
 <?php
-$options = array(
+$options_3 = array(
     array("namePanel" => "サイドバーの情報設定"),
 
     array("nameSection" => "タイトルのランキング設定", "link" => "/"),
