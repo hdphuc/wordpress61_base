@@ -1,0 +1,23 @@
+.form-table {
+    max-width: 1000px;
+}
+
+input[type="time"] {
+    max-width: 150px;
+}
+
+input[type="datetime-local"] {
+    max-width: 200px;
+}
+.form-table  input {
+    margin: 0 10px;
+}
+.time-wrap button {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.time-wrap button.btn-danger {
+    border: 1px solid red;
+    color: #f00;
+}

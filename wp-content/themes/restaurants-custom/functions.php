@@ -11,6 +11,8 @@ require_once('inc/theme-customizer-option.php');
  */
 require_once('inc/theme-restapi-route.php');
 
+require_once('inc/class-setting-time-order.php');
+
 function restaurant_setup() {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 1568, 9999 );
