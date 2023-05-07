@@ -2,7 +2,6 @@
 
 class SettingTimeOrder
 {
-
     const DAY_OF_WEEK = array(
         '1' => 'monday',
         '2' => 'tuesday',
@@ -88,8 +87,6 @@ class SettingTimeOrder
             remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
         }
     }
-
-
 }
 
 new SettingTimeOrder();
