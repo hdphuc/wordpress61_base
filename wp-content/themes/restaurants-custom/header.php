@@ -22,17 +22,17 @@
 <body <?php body_class() ?>>
     <!-- Nav bar -->
     <header class="main-header navbar-expand-lg sticky-top bg-light" id="main-header">
-        <div class="container">
+        <div class="header-container">
             <nav class="navbar navbar-light navbar-expand-lg">
                 <div class="container-fluid w-100">
                     <a class="navbar-brand" href="<?php echo home_url('/') ?>">
                     <img src="<?php echo get_theme_mod('logo_header') ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
                         <?php bloginfo('name'); ?>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="ms-auto collapse navbar-collapse w-auto flex-grow-0" id="navbarNav">
+                    <div class="ms-auto me-lg-auto me-1 collapse navbar-collapse w-auto flex-grow-0" id="navbarNav">
                         <?php
                         if (has_nav_menu('primary-menu')) {
                             wp_nav_menu(
@@ -47,6 +47,12 @@
                             );
                         }
                         ?>
+                    </div>
+                    <div class="header-order-menu">
+                        <a href="<?php echo get_theme_mod('title_order_now_link') ?>">
+                            <strong> <?php echo get_theme_mod('title_order_now') ?> </strong> <br>
+                            <?php echo get_theme_mod('title_order_now_desc') ?>
+                        </a>
                     </div>
                 </div>
                

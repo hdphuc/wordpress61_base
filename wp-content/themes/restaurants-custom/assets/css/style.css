@@ -29,6 +29,27 @@ header {
     color: #000;
 }
 
+.header-order-menu {
+    padding: 10px 20px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
+
+.header-order-menu a {
+    color: #fff;
+}
+
+nav.navbar.navbar-light.navbar-expand-lg {
+    padding: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar>.container-fluid {
+        justify-content: unset;
+    }
+}
+
 /* Nav menu */
 #main-menu>li>a {
     color: #000;
