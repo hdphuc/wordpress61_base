@@ -42,6 +42,13 @@ $options = array(
 		"default" => '',
 		"type" => "text"
 	),
+	array(
+		"name" => "short_code_register",
+		"label" => "Short code form register",
+		"description" => "",
+		"default" => '',
+		"type" => "text"
+	),
 	array("nameSection" => "button order now", "link" => "/"),
 	array(
 		"name" => "title_order_now",

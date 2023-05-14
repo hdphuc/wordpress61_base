@@ -66,7 +66,9 @@
                             <?php if (get_theme_mod('show_btn_register')): ?>
                                 |
                             <div class="btn-sing-in">
-                                <a href="#" class="btn btn-sm"><?php echo get_theme_mod('title_btn_register'); ?></a>
+                                <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo">
+                                    <?php echo get_theme_mod('title_btn_register'); ?>
+                                </button>
                             </div>
                             <?php endif; ?>
                         <?php else: 
@@ -101,3 +103,4 @@
  * Modals
  */
 get_template_part('template-parts/login-modal');
+get_template_part('template-parts/register-modal');
