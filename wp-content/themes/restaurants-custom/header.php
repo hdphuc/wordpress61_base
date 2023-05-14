@@ -48,14 +48,56 @@
                         }
                         ?>
                     </div>
-                    <div class="header-order-menu">
-                        <a href="<?php echo get_theme_mod('title_order_now_link') ?>">
-                            <strong> <?php echo get_theme_mod('title_order_now') ?> </strong> <br>
-                            <?php echo get_theme_mod('title_order_now_desc') ?>
-                        </a>
+                    <div class="header-button-action">
+                        <?php if (!is_user_logged_in()): ?>
+                            <?php if (get_theme_mod('show_btn_sign_in')): ?>
+                            <div class="btn-sing-in">
+                                <?php if ( !is_account_page() ): ?>
+                                <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#sign-in" data-bs-whatever="@mdo">
+                                    <?php echo get_theme_mod('title_btn_sign_in'); ?>
+                                </button>
+                                <?php else: ?>
+                                    <a class="btn btn-sm" href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>">
+                                        <?php echo get_theme_mod('title_btn_sign_in'); ?>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                            <?php endif; ?>
+                            <?php if (get_theme_mod('show_btn_register')): ?>
+                                |
+                            <div class="btn-sing-in">
+                                <a href="#" class="btn btn-sm"><?php echo get_theme_mod('title_btn_register'); ?></a>
+                            </div>
+                            <?php endif; ?>
+                        <?php else: 
+                            $user = wp_get_current_user();
+                            ?>
+                            <div class="btn-sing-in auth-info me-2">
+                                <a href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>">
+                                    <?php echo $user->user_login; ?>
+                                </a>
+                            </div>
+                            |
+                            <div class="btn-sing-in auth-info ms-2 me-3">
+                                <a href="<?php echo wp_logout_url() ; ?>">
+                                    <?php echo __('Logout'); ?>
+                                </a>
+                            </div>
+                        <?php endif; ?>
+                        <div class="header-order-menu">
+                            <a href="<?php echo get_theme_mod('title_order_now_link') ?>">
+                                <strong> <?php echo get_theme_mod('title_order_now') ?> </strong> <br>
+                                <?php echo get_theme_mod('title_order_now_desc') ?>
+                            </a>
+                        </div>
                     </div>
                 </div>
                
             </nav>
         </div>
     </header>
+<?php
+/**
+ * Modals
+ */
+get_template_part('template-parts/login-modal');

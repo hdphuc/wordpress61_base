@@ -15,10 +15,12 @@ img {
     display: block;
 }
 
-input, textarea, select {
-	border: 1px solid #ccc;
-	border-radius: 5p;
-	padding: 5px 10px;
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5p;
+    padding: 5px 10px;
 }
 
 /* ====================================================================== */
@@ -44,6 +46,53 @@ nav.navbar.navbar-light.navbar-expand-lg {
     padding: 0;
 }
 
+.header-button-action {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-button-action .btn{
+
+}
+
+div#sign-in .modal-body #loginform p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div#sign-in .modal-body #loginform p #user_login, .modal-body #loginform p #user_pass {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+    width: 100%;
+    max-width: calc(100% - 100px);
+}
+
+div#sign-in .modal-header h5 {
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button {
+    background: #000;
+    color: #fff;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover {
+    color: #fff;
+    background: #eba53d;
+}
+
+button.close {
+    background: #fff;
+    border: 1px solid #f00;
+    color: #f00;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 991px) {
     .navbar>.container-fluid {
         justify-content: unset;
@@ -61,9 +110,11 @@ nav.navbar.navbar-light.navbar-expand-lg {
     background-color: #000;
     border-radius: 5px;
 }
+
 ul#main-menu {
     align-items: center;
 }
+
 /* ====================================================================== */
 
 /* Main */
@@ -77,7 +128,7 @@ ul#main-menu {
     margin: 60px 0;
 }
 
-.section-block-header .h2{
+.section-block-header .h2 {
     font-size: 5.1rem;
 }
 
@@ -93,27 +144,28 @@ section.home-banner.home-full-banner {
 }
 
 @media only screen and (max-width: 800px) {
-	
-section.home-banner.home-full-banner {
-    margin: 15px 0;
-}
-	
-	.section-block-header .h2 {
-		font-size: 3.1rem;
-	}
-	
-	.section-block-header {
-    text-align: center;
-    margin: 30px 0;
-}
+
+    section.home-banner.home-full-banner {
+        margin: 15px 0;
+    }
+
+    .section-block-header .h2 {
+        font-size: 3.1rem;
+    }
+
+    .section-block-header {
+        text-align: center;
+        margin: 30px 0;
+    }
 }
 
 
-@media only screen and (max-width: 400px) {	
-	.section-block-header .h2 {
-		font-size: 2.1rem;
-	}
+@media only screen and (max-width: 400px) {
+    .section-block-header .h2 {
+        font-size: 2.1rem;
+    }
 }
+
 /* ====================================================================== */
 
 
@@ -122,16 +174,19 @@ section.home-banner.home-full-banner {
     display: flex;
     flex-wrap: wrap;
 }
+
 .woocommerce ul.products li.product {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     float: none;
 }
+
 .woocommerce ul.products::before,
 .woocommerce ul.products::after {
     display: none !important;
 }
+
 .woocommerce ul.products li.product .woocommerce-loop-category__title,
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
 .woocommerce ul.products li.product h3 {
@@ -156,6 +211,7 @@ section.home-banner.home-full-banner {
     margin-right: 10px;
     color: #000;
 }
+
 .woocommerce .product .price ins {
     text-decoration: none;
     color: #f00;
@@ -172,9 +228,11 @@ section.home-banner.home-full-banner {
     transition: 0.1s all linear;
     border: 1px solid #000;
 }
+
 .woocommerce ul.products li.product .button:nth-child(2) {
     margin-right: 10px;
 }
+
 .woocommerce div.product form.cart .button:hover,
 .woocommerce ul.products li.product .button:hover {
     background-color: #fff;
@@ -185,22 +243,27 @@ section.home-banner.home-full-banner {
 .woocommerce .woocommerce-result-count {
     margin: 30px 0;
 }
+
 .woocommerce a.added_to_cart {
     display: none;
 }
+
 .woocommerce ul.products li.product .star-rating {
-	display: none;
+    display: none;
 }
+
 .woocommerce div.product form.cart div.quantity {
     float: left;
     margin: 0 4px 0 0;
     margin-right: 15px;
 }
+
 .woocommerce .quantity .qty {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .woocommerce span.onsale {
     background: #f00;
     width: 40px;
@@ -210,6 +273,7 @@ section.home-banner.home-full-banner {
     align-items: center;
     justify-content: center;
 }
+
 /* quick view */
 #yith-quick-view-modal #yith-quick-view-content {
     height: 100%;
@@ -217,11 +281,12 @@ section.home-banner.home-full-banner {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 800px){
-	.woocommerce ul.products {
-    justify-content: space-between;
+@media only screen and (max-width: 800px) {
+    .woocommerce ul.products {
+        justify-content: space-between;
+    }
 }
-}
+
 /* ====================================================================== */
 
 /* 404 */
@@ -234,7 +299,10 @@ section.home-banner.home-full-banner {
 /* ====================================================================== */
 
 /* MY ACCOUNT */
-.woocommerce-account .woocommerce-MyAccount-navigation ul {list-style: none; padding: 0;}
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+}
 
 .woocommerce-account .woocommerce-MyAccount-navigation ul li a {
     display: block;
@@ -245,9 +313,12 @@ section.home-banner.home-full-banner {
     border-radius: 3px;
 }
 
-.woocommerce-account .woocommerce-MyAccount-navigation ul li {margin-bottom: 5px;}
+.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+    margin-bottom: 5px;
+}
 
-.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover {
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover {
     background: #000;
     color: #fff;
 }
@@ -270,11 +341,12 @@ section.home-banner.home-full-banner {
     background: #000;
 }
 
-header.woocommerce-Address-title.title {
-}
+header.woocommerce-Address-title.title {}
+
 .wps_wpr_common_table td {
-	padding: 0 24px;
+    padding: 0 24px;
 }
+
 /*=======================================================================*/
 /* CONTACT */
 .wpcf7-form-control {
@@ -298,7 +370,7 @@ form.wpcf7-form.init {
     /* justify-content: center; */
 }
 
-form.wpcf7-form.init > * {
+form.wpcf7-form.init>* {
     /* display: flex; */
     /* width: 100%; */
 }
@@ -315,9 +387,11 @@ form.wpcf7-form.init label {
     font-weight: 600;
 }
 
-.wpcf7-form-control:focus, .wpcf7-form-control:focus-visible {
+.wpcf7-form-control:focus,
+.wpcf7-form-control:focus-visible {
     border: 1px solid #ccc !important;
 }
+
 /*===========================================*/
 /* Footer */
 footer {
@@ -330,8 +404,7 @@ footer img {
     width: 100%;
 }
 
-ul#footer-menu{
-}
+ul#footer-menu {}
 
 .footer-menu li a {
     padding: 10px;
@@ -339,14 +412,16 @@ ul#footer-menu{
     color: #000;
     transition: 0.1s all;
 }
+
 .footer-menu li a:hover {
     background-color: #000;
     color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
-	footer {
-		padding: 20px 0;
-	}
+    footer {
+        padding: 20px 0;
+    }
 }
+
 /* ====================================================================== */
