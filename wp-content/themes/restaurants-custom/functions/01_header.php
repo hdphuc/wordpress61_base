@@ -42,9 +42,16 @@ $options = array(
 		"default" => '',
 		"type" => "text"
 	),
+	// array(
+	// 	"name" => "short_code_register",
+	// 	"label" => "Short code form register",
+	// 	"description" => "",
+	// 	"default" => '',
+	// 	"type" => "text"
+	// ),
 	array(
-		"name" => "short_code_register",
-		"label" => "Short code form register",
+		"name" => "url_register_page",
+		"label" => "url register page",
 		"description" => "",
 		"default" => '',
 		"type" => "text"

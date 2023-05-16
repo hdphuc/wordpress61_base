@@ -66,9 +66,11 @@
                             <?php if (get_theme_mod('show_btn_register')): ?>
                                 |
                             <div class="btn-sing-in">
-                                <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo">
-                                    <?php echo get_theme_mod('title_btn_register'); ?>
-                                </button>
+                                <!-- <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo"> -->
+                                    <a href="<?php echo get_theme_mod('url_register_page'); ?>" class="btn btn-sm">
+                                        <?php echo get_theme_mod('title_btn_register'); ?>
+                                    </a>
+                                <!-- </button> -->
                             </div>
                             <?php endif; ?>
                         <?php else: 
