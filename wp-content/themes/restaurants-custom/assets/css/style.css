@@ -52,8 +52,10 @@ nav.navbar.navbar-light.navbar-expand-lg {
     align-items: center;
 }
 
-.header-button-action .btn{
-
+.ur-frontend-form {
+    max-width: 700px;
+    margin: auto;
+    border: none;
 }
 
 div#sign-in .modal-body #loginform p {
@@ -76,12 +78,12 @@ div#sign-in .modal-header h5 {
     text-transform: uppercase;
 }
 
-.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button {
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button,.ur-frontend-form button, .ur-frontend-form input[type="submit"], .ur-frontend-form button[type="submit"] {
     background: #000;
     color: #fff;
 }
 
-.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover {
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover, .ur-frontend-form button:hover, .ur-frontend-form input[type="submit"]:hover, .ur-frontend-form button[type="submit"]:hover {
     color: #fff;
     background: #eba53d;
 }
