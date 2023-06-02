@@ -24,7 +24,7 @@ get_header();
                 $calss_active = '';
                 if ($key === 0) $calss_active = 'active';
             ?>
-                <div class="categorie-item <?php echo $calss_active; ?>" id="<?php echo $product_term->term_id; ?>">
+                <div class="categorie-item <?php echo $calss_active; ?>" cat-id="<?php echo $product_term->term_id; ?>">
                     <div class="thumbnail">
                         <?php
                         $thumbnail_id = get_term_meta($product_term->term_id, 'thumbnail_id', true);
@@ -96,7 +96,7 @@ get_header();
             jQuery('.categorie-item').removeClass('active');
             jQuery(this).addClass('active');
             jQuery('.tabs-cat-item').removeClass('active');
-            let tabid = $(this).attr('id');
+            let tabid = $(this).attr('cat-id');
             jQuery('#tab-id-' + tabid).addClass('active');
         });
     });
