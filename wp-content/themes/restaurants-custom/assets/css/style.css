@@ -493,4 +493,7 @@ ul#footer-menu {}
 .content-menu-page .tabs-cat .tabs-cat-item.active {
     display: block;
 }
+.content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
+    color: #000 !important;
+}
 /* ====================================================================== */
