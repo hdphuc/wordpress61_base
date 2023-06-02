@@ -489,7 +489,7 @@ ul#footer-menu {}
 }
 
 .content-menu-page .categories {
-    margin-bottom: 100px;
+    margin-bottom: 100px !important;
 }
 
 .content-menu-page .tabs-cat .tabs-cat-item {
@@ -509,13 +509,16 @@ ul#footer-menu {}
 @media only screen and (max-width: 800px) {
     .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
         font-size: 30px;
-    }    
+    }
+    .content-menu-page .categories {
+        margin-bottom: 60px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
         font-size: 20px;
-    }    
+    }
 }
 
 @media only screen and (max-width: 600px) {
