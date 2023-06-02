@@ -490,7 +490,6 @@ ul#footer-menu {}
 
 .content-menu-page .categories {
     margin-bottom: 100px;
-    padding: 0 25px;
 }
 
 .content-menu-page .tabs-cat .tabs-cat-item {
@@ -517,4 +516,13 @@ ul#footer-menu {}
     .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
         font-size: 20px;
     }    
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-prev {
+        left: 0;
+    }
+    .slick-next {
+        right: 0;
+    }
 }
