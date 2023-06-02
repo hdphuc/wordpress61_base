@@ -137,6 +137,7 @@ ul#main-menu {
 
 #main-menu>li>a:hover::before,
 .footer-menu li a:hover::before,
+.footer-menu li.current-menu-item a::before,
 #main-menu>li.current-menu-item>a::before {
     height: 2px;
     bottom: 0;
