@@ -519,10 +519,10 @@ ul#footer-menu {}
 }
 
 @media only screen and (max-width: 600px) {
-    .slick-prev {
+    .content-menu-page .slick-prev {
         left: 0;
     }
-    .slick-next {
+    .content-menu-page .slick-next {
         right: 0;
     }
 }
