@@ -112,7 +112,8 @@ button.close {
 }
 
 #main-menu>li>a:hover,
-#main-menu>li.current-menu-item>a {
+#main-menu>li.current-menu-item>a,
+.footer-menu li.current-menu-item a {
     color: #f8a230;
     /* background-color: #000; */
     /* border-radius: 5px; */
