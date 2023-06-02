@@ -487,13 +487,29 @@ ul#footer-menu {}
 .content-menu-page .categories {
     margin-bottom: 100px;
 }
+
 .content-menu-page .tabs-cat .tabs-cat-item {
     display: none;
 }
+
 .content-menu-page .tabs-cat .tabs-cat-item.active {
     display: block;
 }
+
 .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
     color: #000 !important;
+    font-size: 60px;
 }
 /* ====================================================================== */
+
+@media only screen and (max-width: 800px) {
+    .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
+        font-size: 30px;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .content-menu-page .slick-prev:before,.content-menu-page .slick-next:before {
+        font-size: 20px;
+    }    
+}
