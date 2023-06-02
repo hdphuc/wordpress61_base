@@ -454,3 +454,42 @@ ul#footer-menu {}
 }
 
 /* ====================================================================== */
+
+/* MENU PAGE */
+.content-menu-page{
+    padding: 50px 0;
+}
+
+.content-menu-page .categorie-item {
+    filter: grayscale(2);
+    color: #000;
+    transition: 0.3 all;
+    text-align: center;
+    cursor: pointer;
+}
+.content-menu-page .categorie-item .title{
+    font-weight: 700;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.content-menu-page .categorie-item img{
+    max-width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.content-menu-page .categorie-item.active {
+    filter: unset;
+    color: #f8a230;
+}
+
+.content-menu-page .categories {
+    margin-bottom: 100px;
+}
+.content-menu-page .tabs-cat .tabs-cat-item {
+    display: none;
+}
+.content-menu-page .tabs-cat .tabs-cat-item.active {
+    display: block;
+}
+/* ====================================================================== */

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/fontawesome.min.css">
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.4.min.js"></script>
+    <script>(function($){})(jQuery)</script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
