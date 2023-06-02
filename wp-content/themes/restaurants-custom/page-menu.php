@@ -10,8 +10,8 @@ get_header();
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . "/assets/css/slick-theme.css"; ?>" />
 <div class="container">
     <div class="content-menu-page">
-        
-        <?php 
+
+        <?php
         $product_term_args = array(
             'taxonomy' => 'product_cat',
             // 'include' => $product_term_ids,
@@ -20,10 +20,10 @@ get_header();
         $product_terms = get_terms($product_term_args);
         ?>
         <div class="categories">
-            <?php foreach ($product_terms as $key => $product_term) : 
+            <?php foreach ($product_terms as $key => $product_term) :
                 $calss_active = '';
                 if ($key === 0) $calss_active = 'active';
-                ?>
+            ?>
                 <div class="categorie-item <?php echo $calss_active; ?>" id="<?php echo $product_term->term_id; ?>">
                     <div class="thumbnail">
                         <?php
@@ -43,12 +43,12 @@ get_header();
                     </div>
                 </div>
             <?php endforeach; ?>
-        </div>    
+        </div>
         <div class="tabs-cat">
-            <?php foreach ($product_terms as $key => $product_term) : 
+            <?php foreach ($product_terms as $key => $product_term) :
                 $calss_active = '';
                 if ($key === 0) $calss_active = 'active';
-                ?>
+            ?>
                 <div id="tab-id-<?php echo $product_term->term_id; ?>" class="tabs-cat-item <?php echo $calss_active; ?>">
                     <?php echo get_product_by_cats($product_term->term_id); ?>
                 </div>
@@ -65,6 +65,31 @@ get_header();
             slidesToScroll: 4,
             autoplay: true,
             autoplaySpeed: 2000,
+            dots: true,
+            responsive: [{
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 380,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
 
         jQuery('.categorie-item').on('click', function() {
