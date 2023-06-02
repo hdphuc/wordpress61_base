@@ -445,7 +445,9 @@ ul#footer-menu {}
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.footer-menu li.current-menu-item a{
+    color: #f8a230;
+}
 .footer-menu li a:hover {
     color: #f8a230;
 }
