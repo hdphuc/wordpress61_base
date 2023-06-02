@@ -111,7 +111,8 @@ button.close {
     display: block;
 }
 
-#main-menu>li>a:hover {
+#main-menu>li>a:hover,
+#main-menu>li.current-menu-item>a {
     color: #f8a230;
     /* background-color: #000; */
     /* border-radius: 5px; */
@@ -142,7 +143,6 @@ ul#main-menu {
     width: 25px;
     visibility: visible;
 }
-
 /* ====================================================================== */
 
 /* Main */
