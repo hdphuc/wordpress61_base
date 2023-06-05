@@ -8,21 +8,21 @@
 <div class="home-container">
     <div class="home-content">
         <section class="home-slider">
-            <?php echo do_shortcode('[smartslider3 slider=2]'); ?>
+            <?php echo do_shortcode(get_theme_mod('short_code_slider')); ?>
         </section> 
         <section class="home-banner home-full-banner">
             <div class="home-banner-wrap">
-                <a href="<?php echo get_theme_mod('home_banner_link_1') ?>">
-                    <img src="<?php echo get_theme_mod('home_banner_img_1') ?>" alt="banner 1">
+                <a href="<?php echo __(get_theme_mod('home_banner_link_1')) ?>">
+                    <img src="<?php echo __(get_theme_mod('home_banner_img_1')) ?>" alt="banner 1">
                 </a>
             </div>
         </section>
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo get_theme_mod('title_block_product_best_sale') ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_best_sale')) ?></h2>
                     <p class="desc">
-                        <?php echo get_theme_mod('description_block_product_best_sale') ?>
+                        <?php echo __(get_theme_mod('description_block_product_best_sale')) ?>
                     </p>
                 </div>
                 <?php 
@@ -102,17 +102,17 @@
         </section> -->
         <section class="home-banner home-full-banner">
             <div class="home-banner-wrap">
-                <a href="<?php echo get_theme_mod('home_banner_link_2') ?>">
-                    <img src="<?php echo get_theme_mod('home_banner_img_2') ?>" alt="banner">
+                <a href="<?php echo __(get_theme_mod('home_banner_link_2')) ?>">
+                    <img src="<?php echo __(get_theme_mod('home_banner_img_2')) ?>" alt="banner">
                 </a>
             </div>
         </section>
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo get_theme_mod('title_block_product_list') ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_list')) ?></h2>
                     <p class="desc">
-                        <?php echo get_theme_mod('description_block_product_list') ?>
+                        <?php echo __(get_theme_mod('description_block_product_list')) ?>
                     </p>
                 </div>
                 <?php 
@@ -191,7 +191,36 @@
                     <?php wp_reset_postdata(); ?>
                 </div>
             </div>
-        </section>    
+        </section>
+        <section class="home-aboutus home-block">
+            <div class="container">
+                <div class="section-block-header">
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_about_us'), 'restaurant'); ?></h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <h3 class="h3"><?php echo __(get_theme_mod('title_who_are_we'), 'restaurant'); ?></h3>
+                        <?php echo __(get_theme_mod('content_about_us'), 'restaurant'); ?>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <h3 class="h3"><?php echo __(get_theme_mod('title_plant_meat'), 'restaurant'); ?></h3>
+                        <?php echo __(get_theme_mod('content_plant_meat'), 'restaurant'); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-aboutus home-block">
+            <div class="container">
+                <div class="section-block-header">
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_contact_us'), 'restaurant'); ?></h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <?php echo do_shortcode(get_theme_mod('short_code_contact_us')); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 
