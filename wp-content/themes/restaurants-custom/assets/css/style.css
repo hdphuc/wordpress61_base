@@ -434,7 +434,9 @@ footer img {
     width: 100%;
 }
 
-ul#footer-menu {}
+ul#footer-menu {
+    margin-bottom: 0;
+}
 
 .footer-menu li a {
     padding: 10px;
@@ -450,6 +452,21 @@ ul#footer-menu {}
 }
 .footer-menu li a:hover {
     color: #f8a230;
+}
+
+ul#footer-menu li {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    max-width: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 800px) {

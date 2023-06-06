@@ -19,13 +19,6 @@ $options = array(
         "type" => "text"
     ),
     array(
-        "name" => "twitter_link",
-        "label" => "twitter link",
-        "description" => "Insert twitter link",
-        "default" => '#',
-        "type" => "text"
-    ),
-    array(
         "name" => "instagram_link",
         "label" => "instagram link",
         "description" => "Insert instagram link",
@@ -33,9 +26,9 @@ $options = array(
         "type" => "text"
     ),
     array(
-        "name" => "youtube_link",
-        "label" => "youtube link",
-        "description" => "Insert youtube link",
+        "name" => "tiktok_link",
+        "label" => "tiktok link",
+        "description" => "Insert tiktok link",
         "default" => '#',
         "type" => "text"
     ),

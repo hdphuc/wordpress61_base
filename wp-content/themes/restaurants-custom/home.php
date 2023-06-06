@@ -20,9 +20,9 @@
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_best_sale')) ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_best_sale'), 'classic_restaurants') ?></h2>
                     <p class="desc">
-                        <?php echo __(get_theme_mod('description_block_product_best_sale')) ?>
+                        <?php echo __(get_theme_mod('description_block_product_best_sale'), 'classic_restaurants') ?>
                     </p>
                 </div>
                 <?php 
@@ -110,7 +110,7 @@
         <section class="home-products home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_list')) ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_block_product_list'), 'classic_restaurants') ?></h2>
                     <p class="desc">
                         <?php echo __(get_theme_mod('description_block_product_list')) ?>
                     </p>
@@ -195,16 +195,16 @@
         <section class="home-aboutus home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_about_us'), 'restaurant'); ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_about_us'), 'classic_restaurants'); ?></h2>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <h3 class="h3"><?php echo __(get_theme_mod('title_who_are_we'), 'restaurant'); ?></h3>
-                        <?php echo __(get_theme_mod('content_about_us'), 'restaurant'); ?>
+                        <h3 class="h3"><?php echo __(get_theme_mod('title_who_are_we'), 'classic_restaurants'); ?></h3>
+                        <?php echo __(get_theme_mod('content_about_us'), 'classic_restaurants'); ?>
                     </div>
                     <div class="col-12 col-sm-6">
-                        <h3 class="h3"><?php echo __(get_theme_mod('title_plant_meat'), 'restaurant'); ?></h3>
-                        <?php echo __(get_theme_mod('content_plant_meat'), 'restaurant'); ?>
+                        <h3 class="h3"><?php echo __(get_theme_mod('title_plant_meat'), 'classic_restaurants'); ?></h3>
+                        <?php echo __(get_theme_mod('content_plant_meat'), 'classic_restaurants'); ?>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
         <section class="home-aboutus home-block">
             <div class="container">
                 <div class="section-block-header">
-                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_contact_us'), 'restaurant'); ?></h2>
+                    <h2 class="h2"><?php echo __(get_theme_mod('title_home_contact_us'), 'classic_restaurants'); ?></h2>
                 </div>
                 <div class="row">
                     <div class="col-12">
