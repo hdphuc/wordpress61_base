@@ -47,6 +47,13 @@ $options = array(
         "default" => '4',
         "type" => "number"
     ),
+    array(
+        "name" => "product_list_ids_saler",
+        "label" => "product best saler ids",
+        "description" => "insert number product best example: 123,546,6666",
+        "default" => '4',
+        "type" => "text"
+    ),
     array("nameSection" => "Home block banner 2", "link" => "/"),
     array(
         "name" => "home_banner_img_2",

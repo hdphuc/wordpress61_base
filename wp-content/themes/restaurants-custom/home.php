@@ -32,6 +32,9 @@
                         'orderby' => 'date',
                         'order' => 'DESC'
                     );
+                    if (get_theme_mod('product_list_ids_saler')) {
+                        $args['post__in'] = get_theme_mod('product_list_ids_saler');
+                    }
                     $loop = new WP_Query( $args ); ?>
 
                 <div class="section-products-list woocommerce">
@@ -123,7 +126,7 @@
                         'order' => 'DESC'
                     );
                     if (get_theme_mod('product_list_ids')) {
-                        $args['post_in'] = get_theme_mod('product_list_ids');
+                        $args['post__in'] = get_theme_mod('product_list_ids');
                     }
                     if (get_theme_mod('catgory_product_list')) {
                         $args['tax_query'] = array(
