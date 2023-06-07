@@ -33,7 +33,7 @@
                         'order' => 'DESC'
                     );
                     if (get_theme_mod('product_list_ids_saler')) {
-                        $args['post__in'] = get_theme_mod('product_list_ids_saler');
+                        $args['post__in'] = explode(',', get_theme_mod('product_list_ids_saler'));
                     }
                     $loop = new WP_Query( $args ); ?>
 
@@ -126,7 +126,7 @@
                         'order' => 'DESC'
                     );
                     if (get_theme_mod('product_list_ids')) {
-                        $args['post__in'] = get_theme_mod('product_list_ids');
+                        $args['post__in'] = explode(',', get_theme_mod('product_list_ids'));
                     }
                     if (get_theme_mod('catgory_product_list')) {
                         $args['tax_query'] = array(
