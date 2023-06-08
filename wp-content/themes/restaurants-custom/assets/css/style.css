@@ -137,9 +137,9 @@ button.close {
     /* .navbar-light .navbar-brand img{
         display: none !important;
     } */
-    /* .header-order-menu {
+    .header-order-menu {
         display: none;
-    } */
+    }
     .polylang-mobile-header {
         display: block;
     }
