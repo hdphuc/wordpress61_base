@@ -134,9 +134,10 @@ button.close {
     .header-order-menu a {
         font-size: 14px;
     }
-    /* .navbar-light .navbar-brand img{
-        display: none !important;
-    } */
+    .navbar-light .navbar-brand{
+        display: flex !important;
+        align-items: center;
+    }
     .header-order-menu {
         display: none;
     }
