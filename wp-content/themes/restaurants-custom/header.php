@@ -25,7 +25,7 @@
     <header class="main-header navbar-expand-lg sticky-top bg-light" id="main-header">
         <div class="header-container">
             <nav class="navbar navbar-light navbar-expand-lg">
-                <div class="container-fluid w-100">
+                <div class="container-fluid w-100 header-container-pc">
                     <a class="navbar-brand" href="<?php echo home_url('/') ?>">
                     <img src="<?php echo get_theme_mod('logo_header') ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
                         <?php bloginfo('name'); ?>
@@ -55,11 +55,11 @@
                             <div class="btn-sing-in">
                                 <?php if ( !is_account_page() ): ?>
                                 <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#sign-in" data-bs-whatever="@mdo">
-                                    <?php echo get_theme_mod('title_btn_sign_in'); ?>
+                                    <i class="fa fa-user"></i> <span><?php echo get_theme_mod('title_btn_sign_in'); ?></span>
                                 </button>
                                 <?php else: ?>
                                     <a class="btn btn-sm" href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>">
-                                        <?php echo get_theme_mod('title_btn_sign_in'); ?>
+                                    <i class="fa fa-user"></i> <span><?php echo get_theme_mod('title_btn_sign_in'); ?></span>
                                     </a>
                                 <?php endif; ?>
                             </div>
@@ -69,7 +69,7 @@
                             <div class="btn-sing-in">
                                 <!-- <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#register" data-bs-whatever="@mdo"> -->
                                     <a href="<?php echo get_theme_mod('url_register_page'); ?>" class="btn btn-sm">
-                                        <?php echo get_theme_mod('title_btn_register'); ?>
+                                    <i class="fa fa-user-plus"></i> <span><?php echo get_theme_mod('title_btn_register'); ?></span>
                                     </a>
                                 <!-- </button> -->
                             </div>
@@ -79,13 +79,13 @@
                             ?>
                             <div class="btn-sing-in auth-info me-2">
                                 <a href="<?php echo get_permalink(wc_get_page_id('myaccount')); ?>">
-                                    <?php echo $user->user_login; ?>
+                                <i class="fa fa-user"></i><span><?php echo $user->user_login; ?></span>
                                 </a>
                             </div>
                             |
                             <div class="btn-sing-in auth-info ms-2 me-3">
                                 <a href="<?php echo wp_logout_url() ; ?>">
-                                    <?php echo __('Logout'); ?>
+                                <i class="fa fa-sign-out"></i><span><?php echo __('Logout'); ?></span>
                                 </a>
                             </div>
                         <?php endif; ?>
@@ -95,12 +95,32 @@
                                 <?php echo get_theme_mod('title_order_now_desc') ?>
                             </a>
                         </div>
+                        <div class="polylang-mobile-header">
+                            <ul>
+                                <?php pll_the_languages( array( 'show_flags' => 1, 'show_names' => 0, 'dropdown' => 0 ) ); ?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                
             </nav>
         </div>
     </header>
+    <script>
+        // jQuery(document).ready(function(){
+        //     jQuery(window).resize(function(){
+        //         resize_window_reload();
+        //     });
+        //     resize_window_reload();
+        //     function resize_window_reload(){
+        //         if (jQuery(window).width() <= 990){
+        //             jQuery('.header-button-action').appendTo('#main-menu');
+        //         } else {
+        //             jQuery('.header-button-action').appendTo('.header-container-pc');
+        //         }
+        //     }
+        // });
+    </script>
 <?php
 /**
  * Modals
