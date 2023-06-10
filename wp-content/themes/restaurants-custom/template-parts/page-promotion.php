@@ -34,13 +34,13 @@ get_header();
     <div class="list-tab-items d-flex flex-wrap justify-content-center mb-5 w-100">
         <ul class="nav nav-tabs w-100 justify-content-center" role="tablist" >
             <li class="nav-item">
-                <button class="nav-link active" aria-selected="true" data-bs-target="#meatless_monday" data-bs-toggle="tab" role="presentation"><?php echo __('Meatless Monday', 'restaurants-custom'); ?></button>
+                <button class="nav-link active" aria-selected="true" data-bs-target="#meatless_monday" data-bs-toggle="tab" role="presentation"><?php echo __('Meatless Monday', 'restaurant'); ?></button>
             </li>
             <li class="nav-item">
-                <button class="nav-link" aria-selected="false" data-bs-target="#happy_hour" data-bs-toggle="tab" role="presentation"><?php echo __('Happy hour', 'restaurants-custom'); ?></button>
+                <button class="nav-link" aria-selected="false" data-bs-target="#happy_hour" data-bs-toggle="tab" role="presentation"><?php echo __('Happy hour', 'restaurant'); ?></button>
             </li>
             <li class="nav-item">
-                <button class="nav-link" aria-selected="false" data-bs-target="#student_discount" data-bs-toggle="tab" role="presentation"><?php echo __('Student discount', 'restaurants-custom'); ?></button>
+                <button class="nav-link" aria-selected="false" data-bs-target="#student_discount" data-bs-toggle="tab" role="presentation"><?php echo __('Student discount', 'restaurant'); ?></button>
             </li>
         </ul>
     </div>
@@ -113,7 +113,7 @@ get_header();
                         </ul>
                     <?php else : ?>
                         <div class="p-5 d-flex justify-content-center align-items-center">
-                            <?php echo __('No products found'); ?>
+                            <?php echo __('No products found', 'restaurant'); ?>
                         </div>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
@@ -188,7 +188,7 @@ get_header();
                         </ul>
                     <?php else : ?>
                         <div class="p-5 d-flex justify-content-center align-items-center">
-                            <?php echo __('No products found'); ?>
+                            <?php echo __('No products found', 'restaurant'); ?>
                         </div>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
@@ -263,7 +263,7 @@ get_header();
                         </ul>
                     <?php else : ?>
                         <div class="p-5 d-flex justify-content-center align-items-center">
-                            <?php echo __('No products found'); ?>
+                            <?php echo __('No products found', 'restaurant'); ?>
                         </div>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>

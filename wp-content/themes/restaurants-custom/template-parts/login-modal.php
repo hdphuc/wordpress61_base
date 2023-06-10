@@ -13,10 +13,10 @@
                     // Default 'redirect' value takes the user back to the request URI.
                     'redirect'       => ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
                     'form_id'        => 'loginform',
-                    'label_username' => __( 'Username' ),
-                    'label_password' => __( 'Password' ),
-                    'label_remember' => __( 'Remember Me' ),
-                    'label_log_in'   => __( 'Log In' ),
+                    'label_username' => __( 'Username', 'restaurant' ),
+                    'label_password' => __( 'Password', 'restaurant' ),
+                    'label_remember' => __( 'Remember Me', 'restaurant' ),
+                    'label_log_in'   => __( 'Log In', 'restaurant' ),
                     'remember'       => true,
                     // Set 'value_remember' to true to default the "Remember me" checkbox to checked.
                     'value_remember' => false,

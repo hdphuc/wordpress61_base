@@ -124,7 +124,7 @@ function custom_authenticate_username_password($user, $username, $password)
 
     if (empty($username) || empty($password)) {
         $error = new WP_Error();
-        $user  = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.'));
+        $user  = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.', 'restaurant'));
 
         return $error;
     }
@@ -152,7 +152,7 @@ function prefix_load_products_by_category()
 }
 
 
-function get_product_by_cats($cat_id) {
+function get_product_by_cats($cat_id, $per_page = null) {
 
     $args = array(
         'post_type' => 'product',
@@ -164,8 +164,14 @@ function get_product_by_cats($cat_id) {
                 'terms'     =>  [$cat_id],
                 'operator'  => 'IN'
             )
-        )
+            ),
+        'order' => 'name',
+        'order_by' => 'ASC',
     );
+
+    if ($per_page !== null) {
+        $args['posts_per_page'] = $per_page;
+    }
 
     $products = new WP_Query($args);
      ?>
@@ -220,7 +226,7 @@ function get_product_by_cats($cat_id) {
                 <?php endwhile; ?>
             </ul>
         <?php else : ?>
-            <?php echo __('No products found'); ?>
+            <?php echo __('No products found', 'restaurant'); ?>
         <?php endif; ?>
         <?php wp_reset_query(); ?>
         <?php wp_reset_postdata(); ?>

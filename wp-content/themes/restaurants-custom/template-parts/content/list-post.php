@@ -63,7 +63,7 @@ $post_tags = get_the_tags();
                 <?php echo $post_excerpt; ?>
             </div>
             <div class="post-item__content__read-more">
-                <a class="btn btn-sm btn-dark p-5 pt-2 pb-2" href="<?php echo $post_link; ?>">Read more</a>
+                <a class="btn btn-sm btn-dark p-5 pt-2 pb-2" href="<?php echo $post_link; ?>"><?php _e('Read more', 'restaurant'); ?></a>
             </div>
         </div>
     </div>

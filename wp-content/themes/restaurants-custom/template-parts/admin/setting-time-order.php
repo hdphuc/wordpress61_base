@@ -2,13 +2,13 @@
 
 global $current_user;
 $day_of_the_week = array(
-    'monday' => __('Monday', 'restaurants-custom'),
-    'tuesday' => __('Tuesday', 'restaurants-custom'),
-    'wednesday' => __('Wednesday', 'restaurants-custom'),
-    'thursday' => __('Thursday', 'restaurants-custom'),
-    'friday' => __('Friday', 'restaurants-custom'),
-    'saturday' => __('Saturday', 'restaurants-custom'),
-    'sunday' => __('Sunday', 'restaurants-custom'),
+    'monday' => __('Monday', 'restaurant'),
+    'tuesday' => __('Tuesday', 'restaurant'),
+    'wednesday' => __('Wednesday', 'restaurant'),
+    'thursday' => __('Thursday', 'restaurant'),
+    'friday' => __('Friday', 'restaurant'),
+    'saturday' => __('Saturday', 'restaurant'),
+    'sunday' => __('Sunday', 'restaurant'),
 );
 $current_user = wp_get_current_user();
 $email = $current_user->user_email ? $current_user->user_email : 'test@test.com';
@@ -25,7 +25,7 @@ foreach ($day_of_the_week as $key => $value) {
 ?>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/admin/setting_time_order.css' ?>">
 <div class="wrap">
-    <h1><?php _e('Settings time order') ?></h1>
+    <h1><?php _e('Settings time order', 'restaurant') ?></h1>
     <hr>
     <form action="" method="post">
         <table class="form-table" role="presentation">
@@ -41,13 +41,13 @@ foreach ($day_of_the_week as $key => $value) {
         </table>
         <!-- Add custom plus setting for holiday -->
         <div class="wrap-holiday">
-            <h2><?php _e('Holiday') ?></h2>
+            <h2><?php _e('Holiday', 'restaurant') ?></h2>
             <hr>
             <table class="form-table" role="presentation">
                 <?php if (!is_null($setting_time_order_holiday) && is_array($setting_time_order_holiday)): ?>
                     <?php foreach ($setting_time_order_holiday as $k => $holiday): ?>
                         <tr class="time-wrap">
-                            <th><label for="holiday"><?php _e('Holiday') ?></label></th>
+                            <th><label for="holiday"><?php _e('Holiday', 'restaurant') ?></label></th>
                             <td>
                                 From <input type="datetime-local" name="setting_time_order_holiday[<?php echo $k; ?>][from]" id="holiday" value="<?php echo esc_attr($holiday['from']); ?>" class="regular-text from" />
                                 To <input type="datetime-local" name="setting_time_order_holiday[<?php echo $k; ?>][to]" id="holiday" value="<?php echo esc_attr($holiday['to']); ?>" class="regular-text to" />
@@ -82,7 +82,7 @@ foreach ($day_of_the_week as $key => $value) {
             e.preventDefault();
             let index = jQuery('.wrap-holiday tr.time-wrap').length - 1;
             let $html = `<tr class="time-wrap">
-                <th><label for="holiday"><?php _e('Holiday') ?></label></th>
+                <th><label for="holiday"><?php _e('Holiday', 'restaurant') ?></label></th>
                 <td>
                     From <input type="datetime-local" name="setting_time_order[${index}][from]" id="holiday" value="" class="regular-text from" />
                     To <input type="datetime-local" name="setting_time_order[${index}][to]" id="holiday" value="" class="regular-text to" />
