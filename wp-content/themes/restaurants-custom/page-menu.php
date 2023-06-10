@@ -61,16 +61,16 @@ get_header();
             <div id="tab-id-all" class="tabs-cat-item <?php echo $calss_active = 'active'; ?>">
                 <?php foreach ($product_terms as $key => $product_term) :
                     $calss_active = '';
-                    $per_page = 4;
+                    $per_page = 100;
                     // if ($key === 0) $calss_active = 'active';
                 ?>
                     <div class="cat-title"><?php echo $product_term->name; ?></div>
                     <div class="products-by-cats">
                         <?php echo get_product_by_cats($product_term->term_id, $per_page); ?>
                     </div>
-                    <div class="load-more-cat">
+                    <!-- <div class="load-more-cat">
                         <a href="javascripts:void(0);" cat-id="<?php echo $product_term->term_id ?>"><?php _e('See more'); ?></a>
-                    </div>
+                    </div> -->
                     <?php if ($key !== array_key_last($product_terms)) : ?>
                         <div class="hr-space"></div>
                     <?php endif; ?>

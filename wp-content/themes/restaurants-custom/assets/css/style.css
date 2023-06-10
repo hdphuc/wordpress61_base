@@ -273,6 +273,7 @@ section.home-banner.home-full-banner {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    min-height: 50px;
 }
 
 .woocommerce ul.products li.product .price {
