@@ -233,3 +233,28 @@ function get_product_by_cats($cat_id, $per_page = null) {
     </div>
     <?php
 }
+
+
+function cw_add_postmeta_ordering_args($args_sort_cw)
+{
+
+    $cw_orderby_value = isset($_GET['orderby']) ? wc_clean($_GET['orderby']) :
+        apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby'));
+    switch ($cw_orderby_value) {
+        case 'category':
+            $args_sort_cw['orderby'] = 'product_cat';
+            $args_sort_cw['order'] = 'asc';
+            // $args_sort_cw['meta_key'] = 'location';
+            break;
+    }
+
+    return $args_sort_cw;
+}
+add_filter('woocommerce_get_catalog_ordering_args', 'cw_add_postmeta_ordering_args');
+function cw_add_new_postmeta_orderby($sortby)
+{
+    $sortby['category'] = __('Sort By category', 'woocommerce');
+    return $sortby;
+}
+add_filter('woocommerce_default_catalog_orderby_options', 'cw_add_new_postmeta_orderby');
+add_filter('woocommerce_catalog_orderby', 'cw_add_new_postmeta_orderby');
