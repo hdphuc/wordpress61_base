@@ -520,6 +520,10 @@ ul#footer-menu li {
     align-items: center;
 }
 
+.class-coppyright * {
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 800px) {
     footer {
         padding: 20px 0;

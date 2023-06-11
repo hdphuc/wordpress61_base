@@ -55,6 +55,9 @@
                 </div>
             </div>
         </div>
+        <div class="class-coppyright text-center">
+            <p class="align-items-center d-flex flex-wrap justify-content-center fst-italic"> © 2023 Savourieatery <span class="p-2">|</span><small><a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'privacy-policy' )->ID));?>">Privacy Policy</a> </small></p>
+        </div>
     </div>
 </footer>
 
