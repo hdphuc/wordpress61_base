@@ -12,7 +12,11 @@
                 <div class="footer-content">
                     <div class="footer-logo">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <?php if (!empty(get_theme_mod('logo_footer'))): ?>
                             <img class="d-lock" src="<?php echo get_theme_mod('logo_footer'); ?>" alt="logo">
+                        <?php else: ?>
+                            <?php bloginfo('name'); ?>
+                        <?php endif; ?>
                         </a>
                     </div>
                 </div>

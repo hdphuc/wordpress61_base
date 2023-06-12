@@ -243,7 +243,7 @@ function cw_add_postmeta_ordering_args($args_sort_cw)
     switch ($cw_orderby_value) {
         case 'category':
             $args_sort_cw['orderby'] = 'product_cat';
-            $args_sort_cw['order'] = 'asc';
+            $args_sort_cw['order'] = 'ASC';
             // $args_sort_cw['meta_key'] = 'location';
             break;
     }
